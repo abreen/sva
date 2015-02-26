@@ -8,3 +8,13 @@ vector state and run the Fourier transform on the values of a
 particular bit over the entire trace.
 
 This program is written in Python 2 and requires the `numpy` library.
+
+## To do list
+
+*   `sva` should not read FANN training files as if they were
+    sequential bit vectors. It can read the training files and
+    allow lookup of input-output pairs. It could also determine the
+    error rate of prediction, etc. from those pairs.
+*   A separate mode should be used for a trace of excited bits
+    from a given ASC invocation. I am not sure that ASC outputs
+    this, however.
